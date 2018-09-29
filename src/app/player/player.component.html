@@ -1,0 +1,55 @@
+<div *ngIf="vid">
+    <youtube-player [videoId]="videoid" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+    </youtube-player>
+</div>
+<div *ngIf="!vid">
+    <youtube-player [videoId]="videoid" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+    </youtube-player>
+</div>
+<section>
+        <div *ngFor = "let course of courses">    
+    
+                <div *ngFor="let topics of course.topics; let i = index">
+                    <div   *ngIf = "topics.name === coursename">
+                    <a href="http://www.github.com">download link</a>
+                </div>
+                    </div>
+                    </div>
+    </section>
+<section class="col-lg-10 col-md-10 col-sm-12 col-xs-12 pull-right p-0 body-section">
+    <app-online-editor></app-online-editor>
+</section>
+<!-- <youtube-player *ngIf = "videos.id === 'java basics'"
+videoId="TkvQPNdGAKc" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'java advanced'"
+videoId="evU3TzbraQM" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'welcome to python'"
+videoId="Z1Yd7upQsXY" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'basics of python'"
+videoId="N0lxfilGfak" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'python advanced'"
+videoId="rivbQcxzmpk" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'let us c'"
+videoId="TkvQPNdGAKc" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'advanced c'"
+videoId="rivbQcxzmpk" 
+>
+</youtube-player>
+<youtube-player *ngIf = "videos.id === 'basic c'"
+videoId="rivbQcxzmpk" 
+>
+</youtube-player>
+    
+         -->
